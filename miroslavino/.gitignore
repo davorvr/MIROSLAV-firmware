@@ -11,3 +11,4 @@ debug.txt
 .ropeproject
 config*.h
 !config.h
+.vscode/

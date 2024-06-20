@@ -11,10 +11,16 @@ topics = [
     "mph/pir/rack_R",
     "mph/pir/rack_M"
     ]
+
 # Set the IP address of the computer serving as the MQTT broker
-broker_ip = "192.168.71.60"
+broker_ip = "192.168.1.166"
+
 # Set the port, default is 1883
 broker_port = 1883
+
+# Print received messages to terminal in addition to logging them to a file.
+# Useful as monitoring, can be problematic if you have many devices sending messages.
+print_to_terminal = True
 
 """ END USER CONFIG """
 
@@ -34,7 +40,8 @@ def on_connect(client, userdata, flags, rc):
 
 # The callback for when a PUBLISH message is received from the server.
 def on_message(client, userdata, msg):
-    #print(msg.topic+" "+str(msg.payload))
+    if print_to_terminal:
+        print(msg.topic+" "+str(msg.payload))
     line = '"'+datetime.now().isoformat()+'";"'+msg.payload.decode("utf-8")+'"\n'
     topic_files[msg.topic].write(line)
 
@@ -53,5 +60,7 @@ try:
 except KeyboardInterrupt:
     pass
 
+print("Client stopped. Closing files...")
 for f in topic_files:
     topic_files[f].close()
+
