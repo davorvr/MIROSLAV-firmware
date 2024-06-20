@@ -16,7 +16,7 @@
  * To upload through terminal you can use: curl -F "image=@firmware.bin" DEVICE_NAME.local/update
  */
 
-#include "config_test.h"
+#include "config.h"
 
 #ifndef USE_WIFI
   #undef USE_MQTT
@@ -29,7 +29,7 @@
 // This is used for debugging purposes only: it will print out fixed values
 // without reading the input serialisation stack, so the board can be tested
 // without a stack connected.
-#define DEBUG_MCP
+//#define DEBUG_MCP
 
 #ifdef USE_WIFI
   #include <WiFi.h>
