@@ -8,7 +8,10 @@ import gzip
 # Set up topics as defined in the MIROSLAV Arduino config
 # of all active MIROSLAVs.
 topics = [
+    #"mph/env/rack_M", ## uncomment this to record environmental data, if the MIROSLAV is transmitting it
+    #"mph/status/rack_R", ## uncomment this to record MIROSLAV status messages
     "mph/pir/rack_R",
+    #"mph/status/rack_M", ## uncomment this to record MIROSLAV status messages
     "mph/pir/rack_M"
     ]
 
