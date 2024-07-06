@@ -1,6 +1,6 @@
 <img src="logo/hexsticker.png" height="170" align="left" hspace=15></img>
 <br> MIROSLAV firmware <br>
-[![Full paper](https://img.shields.io/badge/Full%20paper-10.1101%2F2024.06.25.600592-%23B12929)](https://doi.org/10.1101/2024.06.25.600592) [![Zenodo](https://img.shields.io/badge/Zenodo-10.5281%2Fzenodo.12191594-%230F81C2)](https://doi.org/10.5281/zenodo.12191594) <br clear="left"/>
+[![Full paper](https://img.shields.io/badge/Full%20paper-10.1101%2F2024.06.25.600592-%23B12929)](https://doi.org/10.1101/2024.06.25.600592) [![Zenodo](https://img.shields.io/badge/Zenodo-10.5281%2Fzenodo.12191593-%230F81C2)](https://doi.org/10.5281/zenodo.12191593) <br clear="left"/>
 ========
 
 ### What is it?
